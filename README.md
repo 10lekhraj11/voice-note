@@ -7,7 +7,7 @@ Summary button is disabled once generated and re-enabled if transcript is edited
 - Frontend: React (Vite), Hooks, Axios
 - Backend: Node.js, Express
 - DB: MongoDB (Mongoose)
-- GenAI: OpenAI (Whisper for transcription + GPT for summary) or Google Gemini (commented alternative)
+- GenAI: Google Gemini
 - Audio storage: Local `uploads/` folder (dev friendly)
 
 ## Quick Start
@@ -35,11 +35,7 @@ Backend `.env`:
 ```
 PORT=4000
 MONGO_URI=mongodb://127.0.0.1:27017/voice_notes_ai
-OPENAI_API_KEY=sk-...
-# For Gemini (optional):
-# GOOGLE_VERTEX_PROJECT_ID=your-project
-# GOOGLE_VERTEX_LOCATION=us-central1
-# GOOGLE_APPLICATION_CREDENTIALS=/absolute/path/to/service-account.json
+
 CLIENT_ORIGIN=http://localhost:5173
 ```
 
